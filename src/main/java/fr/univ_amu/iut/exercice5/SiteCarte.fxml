@@ -22,33 +22,33 @@
 -->
 
 <fx:root type="javafx.scene.layout.HBox"
-         xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
-         stylesheets="@SiteCarte.css"
-         styleClass="carte-site"
-         spacing="20">
+  xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+  stylesheets="@SiteCarte.css"
+  styleClass="carte-site"
+  spacing="20">
 
   <padding>
-    <Insets top="14" right="20" bottom="14" left="20"/>
+    <Insets top="14" right="20" bottom="14" left="20" />
   </padding>
 
   <!-- Bloc 1 : identité du site + badge de fraîcheur -->
   <VBox spacing="4">
-    <Label fx:id="labelCarre" styleClass="carre-no"/>
-    <Label fx:id="labelNom" styleClass="carre-nom"/>
-    <Label fx:id="labelBadge" styleClass="badge"/>
+    <Label fx:id="labelCarre" styleClass="carre-no" />
+    <Label fx:id="labelNom" styleClass="carre-nom" />
+    <Label fx:id="labelBadge" styleClass="badge" />
   </VBox>
 
   <!-- Espace extensible -->
-  <Region HBox.hgrow="ALWAYS"/>
+  <Region HBox.hgrow="ALWAYS" />
 
   <!-- Bloc 2 : nombre de points -->
   <VBox spacing="2" styleClass="stat">
-    <Label fx:id="labelNbPoints" styleClass="stat-num"/>
+    <Label fx:id="labelNbPoints" styleClass="stat-num" />
   </VBox>
 
   <!-- Bloc 3 : nombre de passages -->
   <VBox spacing="2" styleClass="stat">
-    <Label fx:id="labelNbPassages" styleClass="stat-num"/>
+    <Label fx:id="labelNbPassages" styleClass="stat-num" />
   </VBox>
 
 </fx:root>
