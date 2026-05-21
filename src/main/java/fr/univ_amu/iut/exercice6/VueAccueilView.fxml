@@ -15,14 +15,14 @@
 -->
 
 <BorderPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="fr.univ_amu.iut.exercice6.VueAccueilController"
-            prefWidth="820.0" prefHeight="480.0">
+  fx:controller="fr.univ_amu.iut.exercice6.VueAccueilController"
+  prefWidth="820.0" prefHeight="480.0">
 
   <top>
-    <fx:include source="EnTeteView.fxml" fx:id="enTete"/>
+    <fx:include source="EnTeteView.fxml" fx:id="enTete" />
   </top>
 
   <center>
-    <fx:include source="ListeSitesView.fxml" fx:id="listeSites"/>
+    <fx:include source="ListeSitesView.fxml" fx:id="listeSites" />
   </center>
 </BorderPane>

@@ -14,14 +14,14 @@
 -->
 
 <ScrollPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="fr.univ_amu.iut.exercice6.ListeSitesController"
-            fitToWidth="true"
-            style="-fx-background-color: #fafbfc; -fx-background: #fafbfc;">
+  fx:controller="fr.univ_amu.iut.exercice6.ListeSitesController"
+  fitToWidth="true"
+  style="-fx-background-color: #fafbfc; -fx-background: #fafbfc;">
 
   <content>
     <VBox fx:id="conteneurCartes" spacing="10">
       <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets top="20" right="20" bottom="20" left="20" />
       </padding>
     </VBox>
   </content>
