@@ -2,6 +2,7 @@ package fr.univ_amu.iut.exercice4;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 /**
  * Contrôleur de la vue {@code CoquilleAccueilView.fxml}.
@@ -29,33 +30,35 @@ public class CoquilleAccueilController {
   /** Action du menu « Mes sites ». Affiche le titre correspondant au centre de la coquille. */
   @FXML
   private void onMesSites() {
-    // TODO exercice 4 : afficher le titre "Mes sites de suivi" au centre,
-    // puis tracer dans la barre de statut : "Rubrique active : Mes sites".
+    labelTitre.setText("Mes sites de suivi");
+    labelStatut.setText("Rubrique active : Mes sites");
   }
 
   /** Action du menu « Importer une nuit ». */
   @FXML
   private void onImporter() {
-    // TODO exercice 4 : titre "Importer une nuit", statut "Rubrique active : Importer une nuit".
+    labelTitre.setText("Importer une nuit");
+    labelStatut.setText("Rubrique active : Importer une nuit");
   }
 
   /** Action du menu « Vue tabulaire ». */
   @FXML
   private void onVueTabulaire() {
-    // TODO exercice 4 : titre "Vue tabulaire des passages", statut "Rubrique active : Vue
-    // tabulaire".
+    labelTitre.setText("Vue tabulaire des passages");
+    labelStatut.setText("Rubrique active : Vue tabulaire");
   }
 
   /** Action du menu « Paramètres ». */
   @FXML
   private void onParametres() {
-    // TODO exercice 4 : titre "Paramètres de l'application", statut "Rubrique active : Paramètres".
+    labelTitre.setText("Paramètres de l'application");
+    labelStatut.setText("Rubrique active : Paramètres");
   }
 
   /** Action du menu « Fichier > Quitter ». Ferme la fenêtre courante via la scène du label. */
   @FXML
   private void onQuitter() {
-    // TODO exercice 4 : fermer la fenêtre courante.
-    // On récupère le Stage via la Scene du labelTitre, puis on appelle close().
+    Stage stage = (Stage) labelTitre.getScene().getWindow();
+    stage.close();
   }
 }
