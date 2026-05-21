@@ -25,62 +25,62 @@
 -->
 
 <SplitPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="fr.univ_amu.iut.exercice7.QualificationController"
-           dividerPositions="0.6"
-           prefWidth="880.0" prefHeight="520.0">
+  fx:controller="fr.univ_amu.iut.exercice7.QualificationController"
+  dividerPositions="0.6"
+  prefWidth="880.0" prefHeight="520.0">
 
   <items>
 
     <!-- Gauche : tableau des séquences à écouter -->
     <TableView fx:id="tableView">
       <columns>
-        <TableColumn fx:id="colHorodatage" text="Horodatage" prefWidth="110"/>
-        <TableColumn fx:id="colFrequence" text="Fréquence (kHz)" prefWidth="130"/>
-        <TableColumn fx:id="colDuree" text="Durée (s)" prefWidth="80"/>
-        <TableColumn fx:id="colStatut" text="Statut" prefWidth="100"/>
+        <TableColumn fx:id="colHorodatage" text="Horodatage" prefWidth="110" />
+        <TableColumn fx:id="colFrequence" text="Fréquence (kHz)" prefWidth="130" />
+        <TableColumn fx:id="colDuree" text="Durée (s)" prefWidth="80" />
+        <TableColumn fx:id="colStatut" text="Statut" prefWidth="100" />
       </columns>
     </TableView>
 
     <!-- Droite : panneau de détail -->
     <VBox spacing="12">
       <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets top="20" right="20" bottom="20" left="20" />
       </padding>
 
       <Label text="Détail de la séquence"
-             style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+        style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
 
       <Label fx:id="labelSelection"
-             style="-fx-text-fill: #6a737d;"/>
+        style="-fx-text-fill: #6a737d;" />
 
       <HBox spacing="10" alignment="CENTER_LEFT">
         <Button fx:id="boutonEcouter"
-                text="▶ Écouter (simulé)"
-                onAction="#ecouter"
-                style="-fx-base: #4a90d9;"/>
+          text="▶ Écouter (simulé)"
+          onAction="#ecouter"
+          style="-fx-base: #4a90d9;" />
         <Label fx:id="labelLecture"
-               style="-fx-text-fill: #27ae60; -fx-font-style: italic;"/>
+          style="-fx-text-fill: #27ae60; -fx-font-style: italic;" />
       </HBox>
 
-      <Separator/>
+      <Separator />
 
       <Label text="Verdict global de la nuit :"
-             style="-fx-font-weight: bold;"/>
+        style="-fx-font-weight: bold;" />
 
-      <ChoiceBox fx:id="choiceBoxVerdict" maxWidth="200"/>
+      <ChoiceBox fx:id="choiceBoxVerdict" maxWidth="200" />
 
-      <Label text="Commentaire libre :"/>
+      <Label text="Commentaire libre :" />
 
       <TextArea fx:id="zoneCommentaire"
-                prefRowCount="3"
-                promptText="vent fort vers 02:00, sons à vérifier..."/>
+        prefRowCount="3"
+        promptText="vent fort vers 02:00, sons à vérifier..." />
 
       <HBox spacing="10" alignment="CENTER_LEFT">
         <Button fx:id="boutonEnregistrer"
-                text="Enregistrer le verdict"
-                onAction="#enregistrerVerdict"/>
+          text="Enregistrer le verdict"
+          onAction="#enregistrerVerdict" />
         <Label fx:id="labelVerdictGlobal"
-               style="-fx-text-fill: #2c3e50;"/>
+          style="-fx-text-fill: #2c3e50;" />
       </HBox>
 
     </VBox>
