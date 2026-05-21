@@ -20,39 +20,39 @@
 -->
 
 <GridPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
-          fx:controller="fr.univ_amu.iut.exercice3.FormulaireConnexionController"
-          stylesheets="@FormulaireConnexion.css"
-          styleClass="formulaire"
-          hgap="10" vgap="10">
+  fx:controller="fr.univ_amu.iut.exercice3.FormulaireConnexionController"
+  stylesheets="@FormulaireConnexion.css"
+  styleClass="formulaire"
+  hgap="10" vgap="10">
 
   <padding>
-    <Insets top="20" right="20" bottom="20" left="20"/>
+    <Insets top="20" right="20" bottom="20" left="20" />
   </padding>
 
   <Label text="Identifiant :"
-         GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    GridPane.rowIndex="0" GridPane.columnIndex="0" />
   <TextField fx:id="champIdentifiant"
-             promptText="votre identifiant"
-             GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    promptText="votre identifiant"
+    GridPane.rowIndex="0" GridPane.columnIndex="1" />
 
   <Label text="Mot de passe :"
-         GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    GridPane.rowIndex="1" GridPane.columnIndex="0" />
   <PasswordField fx:id="champMotDePasse"
-                 promptText="8 car. mini, 1 majuscule, 1 chiffre"
-                 GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    promptText="8 car. mini, 1 majuscule, 1 chiffre"
+    GridPane.rowIndex="1" GridPane.columnIndex="1" />
 
   <HBox spacing="10" alignment="CENTER_RIGHT"
-        GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2">
+    GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2">
     <Button fx:id="boutonAnnuler"
-            text="Annuler"
-            onAction="#annuler"/>
+      text="Annuler"
+      onAction="#annuler" />
     <Button fx:id="boutonOk"
-            text="OK"
-            styleClass="primary"
-            onAction="#valider"/>
+      text="OK"
+      styleClass="primary"
+      onAction="#valider" />
   </HBox>
 
   <Label fx:id="labelMessage"
-         styleClass="message"
-         GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    styleClass="message"
+    GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" />
 </GridPane>
